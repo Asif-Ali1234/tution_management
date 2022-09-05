@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #66ccff;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background-color: white;
+}
+
+.header_text {
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    color: #007bff;
+}
+
+.col-sm {
+    padding-bottom: 10px;
+}
+
+.table th {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Cinzel', serif;
+    font-weight: bolder;
+}
+
+.table tbody tr td {
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.status_message {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.556);
+}
+
+.status_message strong {
+    color: #007bff;
+}
+
+button.btn,
+a.btn {
+    font-family: 'Cinzel', serif;
+    font-weight: bolder !important;
+}
+
+#alertmessages h6 {
+    word-wrap: break-word;
+}
+
+#alertmessages {
+    width: 100%;
+}

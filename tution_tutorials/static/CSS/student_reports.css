@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(164, 249, 158, 0.7);
+}
+
+
+.ballloader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+}
+
+.ballloader span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #808080;
+}
+
+.loadertext {
+    position: fixed;
+    top: 60%;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: center;
+    color: #28a745;
+}
+
+.ballloader span:nth-child(1) {
+    animation: anim 2s linear infinite;
+    background-color: #ff6600;
+}
+
+.ballloader span:nth-child(2) {
+    animation: anim 2s linear infinite;
+    background-color: #00e64d;
+    animation-delay: -1s;
+}
+
+@keyframes anim {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    5% {
+        top: 0;
+        left: 0;
+    }
+
+    20% {
+        top: 0%;
+        left: 50%;
+    }
+
+    25% {
+        top: 0%;
+        left: 50%;
+    }
+
+    50% {
+        top: 50%;
+        left: 50%;
+    }
+
+    55% {
+        top: 50%;
+        left: 50%;
+    }
+
+    75% {
+        top: 50%;
+        left: 0;
+    }
+
+    80% {
+        top: 50%;
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+.container {
+    background-color: white;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.header_text {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    color: #28a745;
+}
+
+.col-sm {
+    padding-bottom: 10px;
+}
+
+.table th {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Cinzel', serif;
+    font-weight: bolder;
+}
+
+.table tbody tr td {
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.status_message {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}

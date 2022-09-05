@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+#topnav ul li {
+    animation: fadeInRight 0.5s linear forwards;
+    opacity: 0;
+    transition: all 0.3s;
+    font-family: 'Sahitya', serif;
+    font-weight: 700;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+@keyframes fadeInRight {
+    0% {
+        transform: translateX(150px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.header_text {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    color: #007bff;
+}
+
+#topnav ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+}
+
+#topnav ul #usrnm span {
+    color: #007bff95;
+    font-size: 1.5em;
+    font-weight: 1200;
+    letter-spacing: 2px;
+    font-family: 'Cairo', sans-serif;
+    cursor: pointer;
+    padding: 0;
+}
+
+#topnav ul #usrnm i {
+    color: rgba(128, 128, 128, 0.795);
+    margin-right: 0;
+}
+
+#alertmessages h6 {
+    word-wrap: break-word;
+}
+
+#alertmessages {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 1000;
+}
+
+#countcard {
+    border: 1px solid #cdb;
+    border-width: 0.25em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#countcard h2 {
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: auto 4em;
+    color: chocolate;
+}
+
+.card-header {
+    background-color: #cdb;
+}
+
+.card-header p {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.785);
+}
+
+.card-body hr {
+    background-color: rgb(39, 72, 6);
+    height: 1px;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.393);
+    margin: 15px;
+    width: 18rem;
+    border-radius: 8px;
+    padding: 0;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+.modal .modal-dialog .modal-header h4 {
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    color: whitesmoke;
+}
+
+.modal form .modal-body input[type='text'],
+.modal form .modal-body input[type='date'],
+.modal form .modal-body input[type='tel'],
+.modal form .modal-body textarea {
+    border: 1px solid #007bff;
+    color: gray;
+}
+
+.modal form .modal-body div label {
+    color: #007bffa3;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+#students_modal .modal-header h4 {
+    color: whitesmoke;
+}
+
+.modal .modal-header {
+    background-color: #007bff8e
+}
+
+.modal .modal-body,
+.modal .modal-footer {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+#students_modal .modal-header {
+    background-color: #dc354684;
+}
+
+button,
+a {
+    font-family: 'Cinzel', cursive;
+    font-weight: bolder !important;
+}
+
+.container #parent_link {
+    color: #007bff;
+    border: 1px solid #007bff;
+}

@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{% static 'CSS/login_style.css' %}" />
+    <title>Login Into your account</title>
+</head>
+
+<body>
+    {% for msg in messages %}
+    {%if msg is not null%}
+    <div class="alert {{msg.tags}} alert-dismissible center-block fade show" id="alertmessages">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <h6>{{msg}}</h6>
+    </div>
+    {% endif %}
+    {% endfor %}
+    <div class="container">
+        <div class="mainrow">
+            <div class="leftdiv">
+                <div class="text">
+                    <h3>Welcome to Tution Management</h3>
+                    <p>Sign in to experience the management flow</p>
+                </div>
+                <div class="loginhere">
+                    <p>Contact Admin for the Account</p>
+                    <a href="https://www.instagram.com/asif_ali_khan_pattan/" target="_blank" style="font-size:1.5rem;color:chocolate"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="rightdiv">
+                <div class="logo">
+                    <img src="{% static 'Images/logo3.jpg' %}"
+                        class="rounded" alt="" width="60px" height="60px" />
+                    <span class="title">Tution Management system</span>
+                </div>
+                <div class="registrationdiv">
+                    <form id="formsubmission" method="POST" action="/accounts/login/">
+                        {% csrf_token %}
+                        <div class="contentblock active" id="verificationblock">
+                            <div class="innerdiv">
+                                <span class="label">Username</span>
+                                <input type="tel" placeholder="Enter your mobile number" name="username" id="userid" required pattern="(?=.*\d).{10}" title="Mobile Number must be of 10 digits">
+                                <i class="fas fa-spinner" id="icon"></i>
+                                <span class="errormessages" id="username_errormessage"></span>
+                            </div>
+                            <div class="innerdiv">
+                                <span class="label">Password</span>
+                                <input type="password" placeholder="Enter your password" name="passwd" id="passwd"
+                                    required>
+                                <i class="fas fa-eye" onclick="reveal(this,'passwd')"></i>
+                                <span class="errormessages" id="password_errormessage"></span>
+                            </div>
+                            <div class="clearfix">
+                                <button type="submit" class="btn btn-primary float-right" id="submitbtn"
+                                    title="To enable this pick an existing username" disabled>Login Securely</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/af3bc8c33b.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="{% static 'JS/login_scripts.js' %}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
