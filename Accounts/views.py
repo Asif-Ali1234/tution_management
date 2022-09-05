@@ -30,7 +30,7 @@ def get_render_context(user):
     today = dt.now(timezone('Asia/Kolkata')).date()
     # checking if the attendance for today taken or not
     flag = Attendance.objects.filter(date = today,teacher = user).exists()
-    parent_link = f'{domain[0]}:8000/parents/home/'
+    parent_link = f'{domain[0]}/parents/home/'
     td = dt.now(timezone('Asia/Kolkata')).date()
     yearmonth = str(dt.now(timezone('Asia/Kolkata')).strftime('%Y-%m'))
     if StudentFee.objects.filter(teacher = user,fee_date = yearmonth).exists():
