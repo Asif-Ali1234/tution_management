@@ -36,7 +36,7 @@ The othermost important aspect of application of tution is *Daily attendance*. W
 
 Student Fee Managing is the one more good feature in Teacher's point of view and can be able to manage whoever missed the last month tution fee. Teacher can manually update the student fee everytime and can easily generate the fee report of all students on all months.
 
->Online Payment System is NOT integrated and may come in the future :thumbsup:
+>Online Payment System is NOT integrated
 
 ## Accounts
 
